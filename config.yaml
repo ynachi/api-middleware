@@ -1,0 +1,13 @@
+# config.yaml
+iam:
+  provider_type: testing  # Can be "testing", "iamaas", or "aconnect"
+  iamaas:
+    introspect_url: https://iamaas.example.com/introspect
+  aconnect:
+    auth_url: https://aconnect.example.com/auth
+
+logging:
+  error_log: logs/error_log.txt
+  request_log: logs/request_log.txt
+  iam_log: logs/iam_log.txt
+  level: INFO
